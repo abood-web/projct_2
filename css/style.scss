@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    scroll-behavior: unset;
+    box-sizing: border-box;
+}
+
+$t : all 0.8s linear;
+
+body {
+    background-color: #eee;
+}
+
+// start nav
+nav {
+    padding: 15px !important;
+    background-color: rgb(23, 147, 39);
+    border-bottom: 10px solid #174808;
+}
+
+.tot {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .item1 {
+        a {
+            img {
+                width: 50px;
+                height: 50px;
+                border-radius: 25px;
+            }
+        }
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        li {
+            .h-byte {
+                text-decoration: none;
+                color: black;
+                margin: 15px;
+                padding: 7px 15px;
+                border-radius: 50px;
+                transition: $t;
+
+                &:hover {
+                    color: #fff;
+                    background-color: rgba(16, 102, 10, 0.9);
+                }
+            }
+        }
+        @media (min-width : 320px) and (max-width : 767px){
+            li {
+                padding: 10px;
+            }
+        }
+    }
+}
+
+// end nav
+// start news section
+.news {
+    margin-top: 100px;
+
+    .contan {
+        padding: 20px;
+        width: 83%;
+        margin: auto;
+        text-align: center;
+        border: 1px solid #174808;
+        border-radius: 10px;
+
+        .heed {
+            margin-bottom: 50px;
+
+            label {
+                font-size: 25px;
+                color: #174808;
+            }
+        }
+
+        .all {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+
+            .n1 {
+                width: 300px;
+
+                img {
+                    width: 300px;
+                    height: 200px;
+                    object-fit: cover;
+                }
+
+                @media (min-width : 320px) and (max-width : 767px) {
+                    img {
+                        width: auto;
+
+                    }
+                }
+
+                .n2 {
+                    p {
+                        display: inline;
+                    }
+
+                    a {
+                        display: inline-block;
+                        transition: all 0.4s ease;
+
+                        &:hover {
+                            transform: scale(0.9);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// end news section
+// start b-player section
+.b-player {
+    width: 100%;
+    height: 500px;
+}
+
+// end b-player section
+// start 3bestclub
+.b3-club {
+    margin-top: 60px;
+
+    .con {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+
+        .hedo {
+            h1 {
+                color: #174808;
+                font-size: 30px;
+            }
+
+            p {
+                color: rgba(23, 72, 8, 0.9);
+            }
+        }
+
+        .content {
+            ul {
+                list-style-type: none;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 20px;
+
+                li {
+                    transition: $t;
+
+                    &:hover {
+                        transform: scale(0.95555);
+                    }
+
+                    div {
+                        width: 300px;
+                        height: 300px;
+                        background-position: center;
+                        background-size: cover;
+                    }
+
+                    span {
+                        display: inline-block;
+                        margin-top: 15px;
+                        font-size: 20px;
+                        color: #174808;
+                    }
+                }
+            }
+
+            @media (min-width : 320px) and (max-width : 767px) {
+                ul {
+                    justify-content: center;
+                    flex-direction: column !important;
+
+                    li {
+                        flex: 1;
+
+                        div {
+                            border-radius: 20px;
+                        }
+                    }
+                }
+            }
+             @media (min-width : 767px) and (max-width : 1999px) {
+                ul {
+                    justify-content: center;
+                    flex-direction: column !important;
+
+                    li {
+                        flex: 1;
+
+                        div {
+                            border-radius: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// end 3bestclub
+// start footer
+footer {
+    background-color: rgb(23, 147, 39);
+
+    .mim {
+        .i1 {
+            ul {
+                display: flex;
+                list-style-type: none;
+
+                li {
+                    padding: 10px;
+
+                    a {
+                        padding: 5px 10px;
+                        color: #174808;
+                        text-decoration: none;
+                        transition: $t;
+
+                        &:hover {
+                            color: #eee;
+                            background-color: #174808;
+                            border-radius: 50px;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media (min-width : 320px) and (max-width : 767px) {
+            .i1 {
+                ul {
+                    justify-content: center;
+                    align-items: center;
+
+                    li {
+                        padding: 5px;
+                    }
+                }
+            }
+
+            .i2,
+            .i3 {
+                display: none;
+            }
+        }
+
+        .ic2 {
+            ul {
+                list-style-type: none;
+                display: flex;
+                justify-content: flex-start;
+                gap: 20px;
+
+                li {
+                    a {
+                        padding: 5px 10px;
+                        border-radius: 50px;
+                        font-size: 20px;
+                        text-decoration: none;
+                        color: #eee;
+                        transition: all 0.5s linear;
+
+                        &:hover {
+                            background-color: #eee;
+                            color: #174808;
+                        }
+
+                        .iona1:hover {
+                            color: #1877f2;
+                        }
+
+                        .iona2:hover {
+                            color: #25d366;
+                        }
+
+                        .iona3:hover {
+                            color: #000000;
+                        }
+
+                        .iona4:hover {
+                            color: #bff162;
+                        }
+                    }
+                }
+            }
+        }
+         @media (min-width : 320px) and (max-width : 767px) {
+            .ic2 {
+                ul {
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+          }
+        
+
+    }
+
+    @media (min-width : 320px) and (max-width : 767px) {
+        .mim {
+            padding: 0 !important;
+        }
+        .klam {
+            padding: 5px 20px !important;
+        }
+    }
+}
+
+@media (min-width : 320px) and (max-width : 1250px) {
+    footer {
+        padding: 5px;
+        flex-direction: column;
+    }
+}
+
+// end footer 
